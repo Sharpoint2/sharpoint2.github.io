@@ -1,0 +1,101 @@
+
+body {
+  background-image: url("https://learnenglish.britishcouncil.org/sites/podcasts/files/RS8100_GettyImages-872024772-hig.jpg"); 
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  color:#ccc;
+}
+
+#title {
+  text-align: center;
+  padding: 20px;
+  color:black;
+}
+
+
+#description
+{
+    text-align: center;
+    color:black;
+}
+
+#survey-form {
+  background-color: rgba(109, 78, 236, 0.8); /* Semi-transparent using the alpha property */
+  margin: 20px auto; /* Center the form horizontally */
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%; /* Adjust width as needed */
+}
+
+label {
+  display: block; /* Display labels on new lines */
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 97%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 20px;
+ 
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.radio-group { /* Style radio buttons for better grouping (optional) */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow Radio buttons to wrap on smaller screens */
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.radio-group label {
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.checkbox-group { /* Style checkboxes for better grouping */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow checkboxes to wrap on smaller screens */
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  margin-right: 10px;
+  margin-bottom: 1px;
+}
+
+textarea {
+  resize: vertical; /* Allow users to resize the comment box */
+}
+
+button[type="submit"] {
+  background-color: #4CAF50; /* Green submit button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+}
+
+button[type="submit"]:hover {
+  background-color: #45A049; /* Darken submit button on hover */
+}

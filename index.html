@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William Castle - Programmer & Web Developer</title>
+    <meta name="description" content="William Castle is a full-stack developer building performant, accessible, production-ready web applications.">
+    <title>William Castle | Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header>
         <nav class="container">
-            <div class="logo">William Castle</div>
-            <ul>
+            <a href="#hero" class="logo" aria-label="Go to top of page">William Castle</a>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="primary-navigation">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -20,33 +30,41 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section id="hero" class="hero">
             <div class="container hero-content">
-                <h1>Hi, I'm William Castle</h1>
-                <p class="subtitle">Versatile Programmer & Web Developer</p>
-                <p>Building efficient, scalable, and user-friendly applications.</p>
-                <a href="#projects" class="cta-button">View My Work</a>
+                <p class="eyebrow reveal">Available for Software Engineering Roles</p>
+                <h1 class="reveal">I build web products that are fast, reliable, and production-ready.</h1>
+                <p class="subtitle reveal">Full-stack developer focused on modern JavaScript, cloud-ready architecture, and polished user experiences.</p>
+                <div class="hero-actions reveal">
+                    <a href="#projects" class="cta-button">View Featured Projects</a>
+                    <a href="mailto:wb486552@gmail.com" class="ghost-button">Email Me</a>
+                </div>
+                <ul class="hero-metrics reveal" aria-label="Highlights">
+                    <li><strong>7+</strong><span>Languages Used</span></li>
+                    <li><strong>10+</strong><span>Frameworks Explored</span></li>
+                    <li><strong>100%</strong><span>Build with Accessibility in Mind</span></li>
+                </ul>
             </div>
         </section>
 
         <section id="about" class="about">
             <div class="container about-content">
-                <h2>About Me</h2>
-                <p>
-                     I'm a dedicated programmer with a strong foundation in both front-end and back-end development. I thrive on tackling complex challenges and turning ideas into functional, elegant code. Continuously learning and adapting to new technologies is what keeps me motivated
+                <h2 class="reveal">About Me</h2>
+                <p class="reveal">
+                    I am a full-stack developer with hands-on experience building both user-facing interfaces and backend services. I enjoy translating product goals into practical technical solutions that are maintainable, measurable, and easy to iterate on.
                 </p>
-                <p>
-                    I'm especially proficient in full stack web development, and also in programming in C languages like C# and C++. I'm always evolving and learning in programming and am good at picking up new things quickly
+                <p class="reveal">
+                    My work emphasizes clean architecture, performance, and thoughtful UI details. I am especially comfortable with JavaScript ecosystems, Python services, and C-family languages, and I continuously sharpen my skills around modern tooling and deployment workflows.
                 </p>
             </div>
         </section>
 
         <section id="skills" class="skills">
             <div class="container">
-                <h2>Skills</h2>
+                <h2 class="reveal">Technical Toolkit</h2>
                 <div class="skills-grid">
-                    <div class="skill-category">
+                    <div class="skill-category reveal">
                         <h3>Languages</h3>
                         <ul>
                             <li>Python</li>
@@ -58,7 +76,7 @@
                             <li>C++</li>                 
                         </ul>
                     </div>
-                    <div class="skill-category">
+                    <div class="skill-category reveal">
                         <h3>Frameworks & Libraries</h3>
                         <ul>
                             <li>React / Angular / Vue.js</li>
@@ -71,7 +89,7 @@
                             
                         </ul>
                     </div>
-                    <div class="skill-category">
+                    <div class="skill-category reveal">
                         <h3>Tools & Platforms</h3>
                         <ul>
                             <li>Git & GitHub / GitLab</li>
@@ -90,44 +108,45 @@
 
         <section id="projects" class="projects">
             <div class="container">
-                <h2>Projects</h2>
+                <h2 class="reveal">Featured Projects</h2>
                 <div class="project-grid">
-                    <article class="project-card">
-                        <img src="images/project1.png" alt="Project 1 Screenshot" onerror="this.style.display='none'"> <h3>AWS Demo Project</h3>
-                        <p>Demo project interfacing with an Alexa for very basic voice requests</p>
-                        <p><strong>Technologies:</strong> Node.js, typesccript, javascript</p>
+                    <article class="project-card reveal">
+                        <img src="Images/project1.png" alt="AWS demo project screenshot" onerror="this.style.display='none'">
+                        <h3>AWS Demo Project</h3>
+                        <p>Voice-enabled AWS demo that handles basic Alexa-triggered requests and demonstrates cloud API integration.</p>
+                        <p><strong>Technologies:</strong> Node.js, TypeScript, JavaScript</p>
                         <div class="project-links">
                            <a href="https://github.com/Sharpoint2/AWS-Project" target="_blank" rel="noopener noreferrer">View Project Source</a>
                            
                         </div>
                     </article>
 
-                    <article class="project-card">
-                        <img src="images/project2.png" alt="Project 2 Screenshot" onerror="this.style.display='none'">
+                    <article class="project-card reveal">
+                        <img src="Images/project2.png" alt="Concurrent file processor screenshot" onerror="this.style.display='none'">
                         <h3>Concurrent File Processor</h3>
-                        <p>Demo Project showcasing the ability to search files for key phrases, and count them</p>
-                        <p><strong>Technologies:</strong>C#</p>
+                        <p>Multithreaded utility for searching large file sets and aggregating phrase counts with optimized throughput.</p>
+                        <p><strong>Technologies:</strong> C#</p>
                         <div class="project-links">
                             <a href="https://github.com/Sharpoint2/ConcurrentFileProcessor"  target="_blank" rel="noopener noreferrer">View Project Source</a>
 
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card reveal">
                         <h3>Danbooru Random Tag Generator</h3>
-                        <img src="images/project3.png" alt="Project 3 Screenshot" onerror="this.style.display='none'">
+                        <img src="Images/project3.png" alt="Random tag generator screenshot" onerror="this.style.display='none'">
 
-                        <p>Python Application for Generating a Random Selection of Image Tags</p>
+                        <p>Python app that consumes external APIs and generates randomized image tags for exploratory content workflows.</p>
                         <p><strong>Technologies:</strong> Python, Canvas, Web API Usage</p>
                         <div class="project-links">
-                            <a href="https://github.com/Sharpoint2/Danbooru-Random-Tag-Selector" target="_blank" rel="noopener noreferrer">View Project</a>
+                            <a href="https://github.com/Sharpoint2/Danbooru-Random-Tag-Selector" target="_blank" rel="noopener noreferrer">View Project Source</a>
                         </div>
                     </article>
  
-                    <article class="project-card">
-                        <img src="images/project4.png" alt="Project 4 Screenshot" onerror="this.style.display='none'">
+                    <article class="project-card reveal">
+                        <img src="Images/project4.png" alt="Spotify release finder screenshot" onerror="this.style.display='none'">
                         <h3>(WIP) Spotify New Release Finder</h3>
-                        <p>Python Script Using Spotify API to Find Every New Release in a Given 7 Day Period</p>
+                        <p>Python automation script that queries Spotify APIs to surface newly released tracks in a configurable date window.</p>
                         <p><strong>Technologies:</strong> Python, Web API Usage, Spotify API Usage</p>
                         <div class="project-links">
                             <a href="https://github.com/Sharpoint2/Spotify-New-Release-Finder" target="_blank" rel="noopener noreferrer">View Project Source</a>
@@ -140,12 +159,12 @@
 
         <section id="contact" class="contact">
             <div class="container">
-                <h2>Get In Touch</h2>
-                <p>I'm currently seeking new opportunities. Feel free to reach out!</p>
+                <h2 class="reveal">Let's Build Something Great</h2>
+                <p class="reveal">I am actively looking for opportunities where I can contribute to impactful products and grow with a strong engineering team.</p>
                 <p>
-                    <a href="mailto:wb486552@gmail.com" class="contact-link">wb486552@gmail.com</a>
+                    <a href="mailto:wb486552@gmail.com" class="contact-link reveal">wb486552@gmail.com</a>
                 </p>
-                <div class="social-links">
+                <div class="social-links reveal">
                     <a href="https://www.linkedin.com/in/william-castle-821308200/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     <a href="https://github.com/Sharpoint2" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
@@ -155,7 +174,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 William Castle. All rights reserved.</p>
+            <p>&copy; 2026 William Castle. Built with HTML, CSS, and modern JavaScript.</p>
         </div>
     </footer>
 
